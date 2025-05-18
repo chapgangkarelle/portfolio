@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Karelle – Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style_chat.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top px-4 py-3">
+  <div class="container-fluid justify-content-between">
+    <span class="navbar-brand fw-bold" data-i18n="name">Karelle</span>
+    <div class="collapse navbar-collapse justify-content-center">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item"><a class="nav-link" href="#home" data-i18n="home">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#profil" data-i18n="profile">Profil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projets" data-i18n="projects">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="contact">Me contacter</a></li>
+      </ul>
+    </div>
+    <div class="d-flex align-items-center gap-2">
+      <select id="langToggle" class="form-select form-select-sm" style="min-width:90px;">
+        <option value="fr">Français</option>
+        <option value="en">English</option>
+      </select>
+      <button id="themeToggle" class="btn btn-sm"><i class="fas fa-moon"></i></button>
+    </div>
+  </div>
+</nav>
+
+<!-- Accueil -->
+<section id="home" class="d-flex align-items-center vh-100 px-5">
+  <div class="row w-100 align-items-center">
+    <div class="col-md-3 text-center mb-4">
+      <img src="images/photo_d_identité.png" class="img-fluid rounded-circle" alt="Karelle">
+    </div>
+    <div class="col-md-6">
+      <h1 class="display-4 fw-bold text-gradient">Karelle Chapgang</h1>
+      <p id="animated-title" class="fs-4 text-muted">Data Analyst</p>
+    </div>
+    <div class="col-md-3 text-end">
+      <a href="https://github.com/chapgangkarelle" class="text-dark mx-2" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/karellechapgang/" class="text-primary mx-2" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Profil -->
+<section id="profil" class="py-5 px-4">
+  <h2 class="mb-4" data-i18n="profile">Profil</h2>
+  <p class="lead" data-i18n="profile_text">
+   Les données ont une valeur immense, à condition de savoir les exploiter efficacement. À travers une analyse rigoureuse et une structuration pertinente, je transforme l’information brute en solutions exploitables et adaptées aux enjeux. Mon approche structurée me permet de traduire des données en insights concrets pour les équipes stratégiques, marketing ou commerciales, afin de les aider à prendre des décisions éclairées et performantes.
+   Si vous souhaitez échanger autour de projets data ou explorer de nouvelles opportunités, je serais ravie de discuter et de construire ensemble des solutions adaptées.
+  </p>
+</section>
+
+<section id="competences" class="py-5 px-4">
+  <h2 class="mb-4" data-i18n="skills">Compétences</h2>
+  <!-- Compétences techniques -->
+  <div class="row g-3 text-center skills-logos mb-4">
+    <div class="col-6 col-md-3">
+      <img src="https://img.icons8.com/color/48/python.png" alt="Python" class="skill-img">
+      <div data-i18n="python">Python</div>
+    </div>
+    <div class="col-6 col-md-3">
+      <img src="https://img.icons8.com/fluency/48/r-project.png" alt="R" class="skill-img">
+      <div data-i18n="r">R</div>
+    </div>
+    <div class="col-6 col-md-3">
+      <img src="https://img.icons8.com/color/48/sql.png" alt="SQL" class="skill-img">
+      <div data-i18n="sql">SQL</div>
+    </div>
+    <div class="col-6 col-md-3">
+      <img src="https://img.icons8.com/color/48/power-bi.png" alt="Power BI" class="skill-img">
+      <div data-i18n="powerbi">Power BI</div>
+    </div>
+    <div class="col-6 col-md-3">
+      <img src="https://img.icons8.com/color/48/microsoft-excel-2019--v1.png" alt="Excel" class="skill-img">
+      <div data-i18n="excel">Excel</div>
+    </div>
+    <div class="col-6 col-md-3">
+      <img src="https://www.marceldigital.com/media/0yncqj5k/looker-studio-logo-2.png?rmode=max&width=400&height=358" alt="Looker Studio" class="skill-img">
+      <div data-i18n="looker">Looker Studio</div>
+    </div>
+    <div class="col-6 col-md-3">
+      <img src="https://img.icons8.com/ios-filled/48/github.png" alt="GitHub" class="skill-img">
+      <div data-i18n="github">GitHub</div>
+    </div>
+    <div class="col-6 col-md-3">
+      <img src="https://www.topgate.co.jp/wp-content/uploads/2020/08/563e8c20bff1fde84d78367573bc138e.png"
+           alt="Google BigQuery"
+           class="skill-img">
+      <div data-i18n="bigquery">Google BigQuery</div>
+    </div>
+    <div class="col-6 col-md-3">
+      <img src="https://exceed.hr/wp-content/uploads/power-query-logo-white.jpg"
+           alt="Power Query"
+           class="skill-img">
+      <div data-i18n="powerquery">Power Query</div>
+    </div>
+    <div class="col-6 col-md-3">
+      <img src="https://th.bing.com/th/id/OIP.l4AypMPsZgjfjr64BXfYCAHaEi?cb=iwc2&w=1200&h=736&rs=1&pid=ImgDetMain"
+           alt="DAX"
+           class="skill-img">
+      <div data-i18n="dax">DAX</div>
+    </div>
+  </div>
+
+  <!-- Compétences métiers (1 ligne, 3 colonnes, alignées à gauche) -->
+  <div class="row g-3 text-center mb-4">
+    <div class="col-12 col-md-3">
+      <div class="mb-2" style="font-size:2.2em;">📊</div>
+      <div class="fw-bold mb-1" data-i18n="data_analysis">Analyse de données</div>
+      <ul class="list-unstyled mb-0 small">
+        <li data-i18n="cleaning">Nettoyage</li>
+        <li data-i18n="structuring">Structuration</li>
+        <li data-i18n="exploration">Exploration</li>
+      </ul>
+    </div>
+    <div class="col-12 col-md-3">
+      <div class="mb-2" style="font-size:2.2em;">🤖</div>
+      <div class="fw-bold mb-1" data-i18n="modeling">Modélisation</div>
+      <ul class="list-unstyled mb-0 small">
+        <li data-i18n="supervised_ml">ML supervisé</li>
+        <li data-i18n="prediction">Prédiction</li>
+        <li data-i18n="scoring">Scoring</li>
+      </ul>
+    </div>
+    <div class="col-12 col-md-3">
+      <div class="mb-2" style="font-size:2.2em;">📈</div>
+      <div class="fw-bold mb-1" data-i18n="visualization">Visualisation</div>
+      <ul class="list-unstyled mb-0 small">
+        <li data-i18n="dashboards">Dashboards</li>
+        <li data-i18n="kpis">KPIs</li>
+        <li data-i18n="automation">Automatisation</li>
+      </ul>
+    </div>
+    <!-- Case vide pour compléter la ligne à 4 colonnes -->
+    <div class="col-12 col-md-3"></div>
+  </div>
+
+  <!-- Soft skills (2 lignes, 4 colonnes, alignées à gauche) -->
+  <div class="row g-3 text-center">
+    <div class="col-6 col-md-3">
+      <span class="fs-4">🧠</span>
+      <div class="mb-1" data-i18n="analytical_mind">Esprit analytique</div>
+    </div>
+    <div class="col-6 col-md-3">
+      <span class="fs-4">🤝</span>
+      <div class="mb-1" data-i18n="teamwork">Travail d'équipe</div>
+    </div>
+    <div class="col-6 col-md-3">
+      <span class="fs-4">📌</span>
+      <div class="mb-1" data-i18n="organization">Organisation</div>
+    </div>
+    <div class="col-6 col-md-3">
+      <span class="fs-4">🚀</span>
+      <div class="mb-1" data-i18n="autonomy">Autonomie</div>
+    </div>
+    <div class="col-6 col-md-3">
+      <span class="fs-4">⚡</span>
+      <div class="mb-1" data-i18n="proactivity">Proactivité</div>
+    </div>
+    <!-- Cases vides pour compléter la 2e ligne à 4 colonnes -->
+    <div class="col-6 col-md-3"></div>
+    <div class="col-6 col-md-3"></div>
+    <div class="col-6 col-md-3"></div>
+  </div>
+</section>
+
+<!-- Projets -->
+<section id="projets" class="py-5 px-4">
+  <h2 class="mb-4" data-i18n="projects">Mes Projets</h2>
+  <div class="mb-3">
+    <button class="btn btn-outline-dark filter-btn" data-category="all" data-i18n="all">Tous</button>
+    <button class="btn btn-outline-dark filter-btn" data-category="analyse" data-i18n="analysis">Analyses</button>
+    <button class="btn btn-outline-dark filter-btn" data-category="dashboard" data-i18n="dashboard">Dashboards</button>
+    <button class="btn btn-outline-dark filter-btn" data-category="prediction" data-i18n="prediction">Prédictions</button>
+  </div>
+  <div class="row" id="project-list"></div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 px-4">
+  <h2 class="mb-4 text-center" data-i18n="contact">Me contacter</h2>
+  <form id="contactForm" class="mx-auto" style="max-width: 500px;">
+    <div class="row">
+      <div class="col-md-6 mb-3"><input type="text" class="form-control" placeholder="Nom" required></div>
+      <div class="col-md-6 mb-3"><input type="email" class="form-control" placeholder="Email" required></div>
+    </div>
+    <div class="mb-3"><input type="text" class="form-control" placeholder="Objet du message" required></div>
+    <div class="mb-3"><textarea class="form-control" rows="5" placeholder="Message" required></textarea></div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary" data-i18n="send">Envoyer</button>
+    </div>
+  </form>
+  <div class="contact-infos">
+  <div><strong>Email :</strong> <a href="mailto:chapgangkarelle24@gmail.com">chapgangkarelle24@gmail.com</a></div>
+  <div><strong>Téléphone :</strong> 07 56 94 13 41</div>
+  <div><strong>Localisation :</strong> Île-de-France</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-4 mt-5">
+  <div>
+    <a href="https://github.com/chapgangkarelle" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+    <a href="https://www.linkedin.com/in/karellechapgang/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+  </div>
+  <div class="mt-2">&copy; 2025 Karelle Chapgang. Tous droits réservés.</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="js/script_chat.js"></script>
+</body>
+</html>
