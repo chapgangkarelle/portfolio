@@ -187,22 +187,30 @@
 <!-- Contact -->
 <section id="contact" class="py-5 px-4">
   <h2 class="mb-4 text-center" data-i18n="contact">Me contacter</h2>
-  <form id="contactForm" class="mx-auto" style="max-width: 500px;">
+  <form id="contactForm" class="mx-auto" style="max-width: 500px;" action="https://formspree.io/f/mdkgbrrw" method="POST">
     <div class="row">
-      <div class="col-md-6 mb-3"><input type="text" class="form-control" placeholder="Nom" required></div>
-      <div class="col-md-6 mb-3"><input type="email" class="form-control" placeholder="Email" required></div>
+      <div class="col-md-6 mb-3">
+        <input type="text" class="form-control" name="name" placeholder="Nom" required>
+      </div>
+      <div class="col-md-6 mb-3">
+        <input type="email" class="form-control" name="email" placeholder="Email" required>
+      </div>
     </div>
-    <div class="mb-3"><input type="text" class="form-control" placeholder="Objet du message" required></div>
-    <div class="mb-3"><textarea class="form-control" rows="5" placeholder="Message" required></textarea></div>
+    <div class="mb-3">
+      <input type="text" class="form-control" name="subject" placeholder="Objet du message" required>
+    </div>
+    <div class="mb-3">
+      <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+    </div>
     <div class="text-center">
       <button type="submit" class="btn btn-primary" data-i18n="send">Envoyer</button>
     </div>
   </form>
-  <div class="contact-infos">
-  <div><strong>Email :</strong> <a href="mailto:chapgangkarelle24@gmail.com">chapgangkarelle24@gmail.com</a></div>
-  <div><strong>Téléphone :</strong> 07 56 94 13 41</div>
-  <div><strong>Localisation :</strong> Île-de-France</div>
-</div>
+  <div class="contact-infos mt-4">
+    <div><strong>Email :</strong> <a href="mailto:chapgangkarelle24@gmail.com">chapgangkarelle24@gmail.com</a></div>
+    <div><strong>Téléphone :</strong> 07 56 94 13 41</div>
+    <div><strong>Localisation :</strong> Île-de-France</div>
+  </div>
 </section>
 
 <!-- Footer -->
